@@ -31,6 +31,7 @@ class FirstViewController: UIViewController {
         let textField = UITextField(frame: CGRect(x:10,y:270, width: 370, height: 45))
         textField.borderStyle = .roundedRect
         textField.font = .systemFont(ofSize: 15, weight: .semibold)
+        textField.keyboardType = .emailAddress
         textField.placeholder = "이메일 또는 전화번호"
         return textField
     } ()
@@ -39,6 +40,7 @@ class FirstViewController: UIViewController {
         let textField = UITextField(frame: CGRect(x:10,y:320, width: 370, height: 45))
         textField.borderStyle = .roundedRect
         textField.font = .systemFont(ofSize: 15, weight: .semibold)
+        textField.isSecureTextEntry = true
         textField.placeholder = "비밀번호"
         return textField
     } ()
@@ -78,6 +80,10 @@ class FirstViewController: UIViewController {
     private func presentToThirdVC() {
         let thirdVC = ThirdViewController()
         thirdVC.modalPresentationStyle = .formSheet
+        
+        thirdVC.name = emailTextField.text
+        thirdVC.dataBind()
+        
         self.present(thirdVC, animated: true, completion: nil)
     }
     

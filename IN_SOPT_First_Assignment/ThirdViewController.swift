@@ -28,6 +28,7 @@ class ThirdViewController: UIViewController {
         return button
     } ()
     
+    var name : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +40,12 @@ class ThirdViewController: UIViewController {
             // Do any additional setup after loading the view.
         }
     }
-            
+    
+    func dataBind(){
+        guard let name = self.name else {return}
+        startLabel.text = "\(name)님\n환영합니다"
+    }
+    
         @objc
             private func touchupBackButton(){
                 if self.navigationController==nil{
