@@ -46,26 +46,15 @@ class ThirdViewController: UIViewController {
         startLabel.text = "\(name)님\n환영합니다"
     }
     
-        @objc
-            private func touchupBackButton(){
-                if self.navigationController==nil{
-                    self.dismiss(animated: true, completion: nil)
-                }
-                else {
-                    self.navigationController?.popViewController(animated: true)
-                }
-            }
-        
-        
-        /*
-         // MARK: - Navigation
-         
-         // In a storyboard-based application, you will often want to do a little preparation before navigation
-         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-         }
-         */
-        
+    @objc
+    private func touchupBackButton(){
+        if self.navigationController==nil{
+            self.dismiss(animated: true, completion: nil)
+        }
+        else {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
+    
+}
 
