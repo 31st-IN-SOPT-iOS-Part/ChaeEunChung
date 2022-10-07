@@ -74,6 +74,7 @@ class SecondViewController: UIViewController {
         thirdVC.dataBind()
         
         self.present(thirdVC, animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     @objc
     private func touchupLoginButton(){
