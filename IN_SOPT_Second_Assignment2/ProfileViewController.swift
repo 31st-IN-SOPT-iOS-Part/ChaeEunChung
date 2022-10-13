@@ -136,7 +136,7 @@ class ProfileViewController: UIViewController {
             }
             
             exitButton.snp.makeConstraints{make in
-                make.bottom.equalTo(self.view.safeAreaLayoutGuide).inset(740)
+                make.top.equalTo(self.view.safeAreaLayoutGuide).offset(10)
                 make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(25)
                 make.width.equalTo(13)
                 make.height.equalTo(14)
