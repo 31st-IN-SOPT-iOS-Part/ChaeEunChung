@@ -56,14 +56,14 @@ class ListViewController: UIViewController {
 
             
             friendLabel.snp.makeConstraints{make in
-                make.top.equalTo(self.view.safeAreaLayoutGuide).offset(12)
-                make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(14)
+                make.top.equalTo(self.view.safeAreaLayoutGuide).offset(-30)
+                make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(15)
                 
             }
             
             settingView.snp.makeConstraints{make in
                 make.top.equalTo(self.friendLabel.snp.top)
-                make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(57)
+                make.trailing.equalTo(self.view.safeAreaLayoutGuide).inset(15)
                 make.width.height.equalTo(21)
                 
             }
@@ -87,7 +87,7 @@ class ListViewController: UIViewController {
         
         private func configImageView() {
             settingImageView.image = UIImage(named: "settings 1")
-//            profileImageView.image = UIImage(named:"profile_userImg")
+            
             }
         private func configButton() {
             profileButton.setBackgroundImage(UIImage(named:"profile_userImg"), for: .normal)

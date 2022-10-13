@@ -172,7 +172,7 @@ class ProfileViewController: UIViewController {
             
             chatButton.snp.makeConstraints{make in
                 make.bottom.equalTo(self.view.safeAreaLayoutGuide).inset(77.41)
-                make.leading.equalTo(self.modifyButton.snp.leading).offset(-77.14)
+                make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(83)
                 make.width.equalTo(18.86)
                 make.height.equalTo(17.59)
             }
@@ -188,7 +188,7 @@ class ProfileViewController: UIViewController {
             
             kakaostoryButton.snp.makeConstraints{make in
                 make.bottom.equalTo(self.view.safeAreaLayoutGuide).inset(75.42)
-                make.trailing.equalTo(self.modifyButton.snp.trailing).offset(78.28)
+                make.trailing.equalTo(self.view.safeAreaLayoutGuide).offset(-81.45)
                 make.width.equalTo(18.55)
                 make.height.equalTo(21.58)
             }
