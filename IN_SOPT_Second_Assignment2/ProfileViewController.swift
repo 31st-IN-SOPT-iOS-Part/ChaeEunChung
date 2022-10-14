@@ -10,6 +10,7 @@ import SnapKit
 
 class ProfileViewController: UIViewController {
     
+    
     private let backgroundView: UIView = {
         let view = UIView()
         view.layer.backgroundColor = (UIColor.black.cgColor).copy(alpha:0.2)
@@ -29,7 +30,7 @@ class ProfileViewController: UIViewController {
     
     private let nameLabel: UILabel={
         let label = UILabel()
-        label.text = "김솝트"
+        label.text = "정채은"
         label.font = .systemFont(ofSize: 18)
         label.textColor = .white
         return label
