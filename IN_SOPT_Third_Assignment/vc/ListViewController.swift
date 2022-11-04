@@ -158,6 +158,7 @@ extension ListViewController: UITableViewDelegate{
 }
 
 extension ListViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return friendList.count
     }

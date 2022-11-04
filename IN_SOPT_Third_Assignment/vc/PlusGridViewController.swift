@@ -113,6 +113,7 @@ extension PlusGridViewController {
         recentLabel.snp.makeConstraints{make in
             make.top.equalToSuperview().offset(60)
             make.centerX.equalToSuperview()
+            make.height.equalTo(18)
         }
      
         sendLabel.snp.makeConstraints{make in
