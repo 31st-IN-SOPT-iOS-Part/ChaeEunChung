@@ -11,11 +11,11 @@ import SwiftyColor
 
 class PlusGridViewController: UIViewController {
 
+    
     private let recentLabel: UILabel={
         let label = UILabel()
         label.text = "최근 항목"
         label.font = .systemFont(ofSize: 16)
-        label.textColor = .black
         return label
     }()
     
@@ -32,12 +32,13 @@ class PlusGridViewController: UIViewController {
         label.textColor = .systemYellow
         return label
     }()
-    
-    private lazy var exitButton: UIButton={
+        
+    private lazy var exitButton : UIButton = {
         let button = UIButton()
         button.addTarget(self, action: #selector(touchupExitButton), for: .touchUpInside)
         return button
     } ()
+    
     
     private let exitImageView = UIImageView()
     
@@ -108,8 +109,9 @@ extension PlusGridViewController {
         }
         exitButton.addSubview(exitImageView)
         
+        
         recentLabel.snp.makeConstraints{make in
-            make.top.equalToSuperview().offset(55)
+            make.top.equalToSuperview().offset(60)
             make.centerX.equalToSuperview()
         }
      
