@@ -169,6 +169,7 @@ extension PhotoGridViewController: UITableViewDataSource {
         return friendList.count
 }
 
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let friendCell = tableView.dequeueReusableCell(
             withIdentifier: FriendTableViewCell.identifier, for: indexPath)
