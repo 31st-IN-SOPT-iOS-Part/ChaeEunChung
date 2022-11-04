@@ -29,7 +29,6 @@ class PlusGridViewController: UIViewController {
     private let numberLabel: UILabel={
         let label = UILabel()
         label.font = .systemFont(ofSize:14)
-//        label.text = "0"
         label.textColor = .systemYellow
         return label
     }()
